@@ -5,7 +5,16 @@ import app from "./server.js";
 import mongodb from "mongodb";
 import ReviewsDAO from "./dao/reviewsDAO.js";
 
-//start from here
+const app = express()
+app.use(cors({
+  origin: ['https://movie-reviwer-frontend.vercel.app/'],
+  methods: ['GET', 'POST'],
+  credentials: true,
+}
+  
+));
+app.use(express.json());
+
 
 app.use(bodyParser.json());
 
