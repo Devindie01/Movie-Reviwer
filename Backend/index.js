@@ -7,7 +7,7 @@ import ReviewsDAO from "./dao/reviewsDAO.js";
 
 const app = express()
 app.use(cors({
-  origin: ['https://movie-reviwer-frontend.vercel.app/'],
+  origin: ['https://movie-reviwer-frontend.vercel.app'],
   methods: ['GET', 'POST'],
   credentials: true,
 }
