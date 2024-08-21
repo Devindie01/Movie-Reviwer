@@ -12,8 +12,7 @@ const mongoUsername = process.env.MONGO_USERNAME;
 const mongoPassword = process.env.MONGO_PASSWORD;
 const encodedPassword = encodeURIComponent(mongoPassword);
 
-const uri = `mongodb+srv://${mongoUsername}:${encodedPassword}@cluster0.e2myved.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
-
+const uri = `mongodb+srv://${mongoUsername}:${encodedPassword}@@cluster0.e2myved.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 const port = process.env.PORT || 3000;
 
 app.use(cors({
