@@ -2,7 +2,7 @@ const url = new URL(location.href);
 const movieId = url.searchParams.get('id');
 const movieTitle = url.searchParams.get('title');
 
-const APILINK = 'https://movie-reviwer.vercel.app';
+const APILINK = 'https://movie-reviwer.vercel.app/';
 const main = document.getElementById("section");
 const title = document.getElementById("title");
 
